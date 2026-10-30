@@ -958,11 +958,20 @@
    "tag": "g"
   },
   {
+   "id": "sc-t-near-side-armbar",
+   "from": "sc-t",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Рычаг локтя на ближнюю руку",
+   "orig": "Near-side armbar from side control",
+   "tag": "b"
+  },
+  {
    "id": "sc-t-far-side-armbar",
    "from": "sc-t",
    "to": "sub",
    "type": "sub",
-   "ru": "Рычаг локтя через голову",
+   "ru": "Рычаг локтя на дальнюю руку (через голову)",
    "orig": "Far-side armbar",
    "tag": "b"
   },
