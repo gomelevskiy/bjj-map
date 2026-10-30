@@ -117,6 +117,20 @@ function vHome() {
     </section>`;
 }
 
+
+// Поиск: каждое слово запроса ищется по началу слова в названии, английском названии и позициях «откуда/куда».
+// Разговорные синонимы приводятся к словам из справочника.
+const SYN = { 'армбар': 'рычаг локтя', 'armbar': 'рычаг локтя', 'сайд': 'боков', 'сайдконтроль': 'боков', 'side': 'боков', 'бокового': 'боков', 'боковой': 'боков', 'маунта': 'маунт', 'спины': 'спин', 'спина': 'спин', 'гарда': 'гард', 'удушка': 'удуш', 'удушение': 'удуш', 'свип': 'свип', 'проход': 'проход', 'хилхук': 'хилхук', 'ахилл': 'ахилл' };
+const stem = w => w.length > 5 ? w.slice(0, 5) : w;
+const words = s => s.toLowerCase().replace(/ё/g, 'е').split(/[^a-zа-я0-9]+/).filter(Boolean);
+function queryTerms(q) {
+  return words(q).flatMap(w => SYN[w] ? words(SYN[w]).map(stem) : [stem(w)]);
+}
+function matchText(text, terms) {
+  const ws = words(text);
+  return terms.every(t => ws.some(w => w.startsWith(t)));
+}
+const techText = t => `${t.ru} ${t.orig} ${PMAP[t.from].ru} ${PMAP[t.from].orig} ${PMAP[t.to].ru}`;
 let mq = '', mGroup = '';
 function vMap() {
   const ps = positions();
@@ -135,11 +149,11 @@ function vMap() {
 }
 function fillMapSearch() {
   const el = document.getElementById('mres'), tl = document.getElementById('mtiles'); if (!el) return;
-  const s = mq.trim().toLowerCase();
-  if (!s) { el.innerHTML = ''; tl.hidden = false; return }
+  const terms = queryTerms(mq);
+  if (!terms.length) { el.innerHTML = ''; tl.hidden = false; return }
   tl.hidden = true;
-  const ps = positions().filter(p => (p.ru + ' ' + p.orig).toLowerCase().includes(s));
-  const ts = techs().filter(t => (t.ru + ' ' + t.orig).toLowerCase().includes(s)).slice(0, 40);
+  const ps = positions().filter(p => matchText(p.ru + ' ' + p.orig, terms));
+  const ts = techs().filter(t => matchText(techText(t), terms)).slice(0, 40);
   el.innerHTML = (ps.length ? `<div class="stack"><h2 class="h2">Позиции</h2>${ps.map(p => `<a class="item" href="#pos-${p.id}"><span class="grow"><b>${esc(p.ru)}</b><small>${esc(p.orig)}</small></span><span class="muted">›</span></a>`).join('')}</div>` : '')
     + (ts.length ? `<div class="stack" style="margin-top:16px"><h2 class="h2">Техники</h2>${ts.map(t => techRow(t, 'out', esc(PMAP[t.from].ru) + ' ')).join('')}</div>` : '')
     || '<p class="empty">Ничего не нашлось. Попробуй другое слово или русское и английское название.</p>';
@@ -252,10 +266,10 @@ function vTrainNew() {
 }
 function fillTechSearch() {
   const el = document.getElementById('tres'); if (!el) return;
-  const s = tq.trim().toLowerCase();
-  if (!s) { el.innerHTML = ''; return }
+  const terms = queryTerms(tq);
+  if (!terms.length) { el.innerHTML = ''; return }
   const have = new Set(draftS.techs.map(x => x.id));
-  const res = techs().filter(t => !have.has(t.id) && (t.ru + ' ' + t.orig).toLowerCase().includes(s)).slice(0, 8);
+  const res = techs().filter(t => !have.has(t.id) && matchText(techText(t), terms)).slice(0, 8);
   el.innerHTML = res.length ? res.map(t => `<button type="button" class="item" data-act="sadd" data-id="${t.id}" style="text-align:left;cursor:pointer;width:100%;border-style:dashed"><span class="grow"><b>${esc(t.ru)}</b><small>${esc(PMAP[t.from].ru)}</small></span><span class="small" style="color:var(--accent)">+ добавить</span></button>`).join('') : '<p class="empty" style="margin:0">Не нашлось. Попробуй по-английски.</p>';
 }
 
