@@ -1,0 +1,2410 @@
+{
+ "version": 1,
+ "groups": [
+  [
+   "stand",
+   "Стойка"
+  ],
+  [
+   "guard",
+   "Гард снизу"
+  ],
+  [
+   "passing",
+   "Сверху против гарда"
+  ],
+  [
+   "top",
+   "Контроль сверху"
+  ],
+  [
+   "bottom",
+   "Контроль снизу"
+  ],
+  [
+   "back",
+   "Спина, черепаха, фронт-хедлок"
+  ],
+  [
+   "legs",
+   "Ноги"
+  ]
+ ],
+ "types": {
+  "takedown": [
+   "Тейкдаун",
+   "--t-takedown"
+  ],
+  "sweep": [
+   "Свип",
+   "--t-sweep"
+  ],
+  "pass": [
+   "Проход",
+   "--t-pass"
+  ],
+  "escape": [
+   "Выход",
+   "--t-escape"
+  ],
+  "sub": [
+   "Сабмишен",
+   "--t-sub"
+  ],
+  "trans": [
+   "Переход",
+   "--t-trans"
+  ]
+ },
+ "typeOrder": [
+  "sub",
+  "sweep",
+  "pass",
+  "takedown",
+  "escape",
+  "trans"
+ ],
+ "positions": [
+  {
+   "id": "stand",
+   "ru": "Стойка",
+   "orig": "Standing",
+   "group": "stand",
+   "tag": "b"
+  },
+  {
+   "id": "clinch",
+   "ru": "Клинч",
+   "orig": "Clinch, grips",
+   "group": "stand",
+   "tag": "b"
+  },
+  {
+   "id": "cg-b",
+   "ru": "Закрытый гард",
+   "orig": "Closed guard, bottom",
+   "group": "guard",
+   "tag": "b"
+  },
+  {
+   "id": "hg-b",
+   "ru": "Полугард",
+   "orig": "Half guard, bottom",
+   "group": "guard",
+   "tag": "b"
+  },
+  {
+   "id": "kshield-b",
+   "ru": "Z-гард (колено-щит)",
+   "orig": "Knee shield / Z-guard",
+   "group": "guard",
+   "tag": "b"
+  },
+  {
+   "id": "dh-b",
+   "ru": "Глубокий полугард",
+   "orig": "Deep half guard",
+   "group": "guard",
+   "tag": "b"
+  },
+  {
+   "id": "bfly-b",
+   "ru": "Баттерфляй",
+   "orig": "Butterfly guard",
+   "group": "guard",
+   "tag": "b"
+  },
+  {
+   "id": "seated-b",
+   "ru": "Сидячий открытый гард",
+   "orig": "Seated open guard",
+   "group": "guard",
+   "tag": "b"
+  },
+  {
+   "id": "cs-b",
+   "ru": "Коллар-слив",
+   "orig": "Collar sleeve guard",
+   "group": "guard",
+   "tag": "g"
+  },
+  {
+   "id": "dlr-b",
+   "ru": "Де ла Рива",
+   "orig": "De La Riva guard",
+   "group": "guard",
+   "tag": "b"
+  },
+  {
+   "id": "rdlr-b",
+   "ru": "Обратная де ла Рива",
+   "orig": "Reverse De La Riva guard",
+   "group": "guard",
+   "tag": "b"
+  },
+  {
+   "id": "spider-b",
+   "ru": "Паук",
+   "orig": "Spider guard",
+   "group": "guard",
+   "tag": "g"
+  },
+  {
+   "id": "lasso-b",
+   "ru": "Лассо",
+   "orig": "Lasso guard",
+   "group": "guard",
+   "tag": "g"
+  },
+  {
+   "id": "worm-b",
+   "ru": "Ворм-гард",
+   "orig": "Worm guard",
+   "group": "guard",
+   "tag": "g"
+  },
+  {
+   "id": "x-b",
+   "ru": "X-гард",
+   "orig": "X-guard",
+   "group": "guard",
+   "tag": "b"
+  },
+  {
+   "id": "kg-b",
+   "ru": "K-гард",
+   "orig": "K-guard",
+   "group": "guard",
+   "tag": "b"
+  },
+  {
+   "id": "rubber-b",
+   "ru": "Резиновый гард",
+   "orig": "Rubber guard",
+   "group": "guard",
+   "tag": "b"
+  },
+  {
+   "id": "cg-t",
+   "ru": "В закрытом гарде",
+   "orig": "Inside closed guard, top",
+   "group": "passing",
+   "tag": "b"
+  },
+  {
+   "id": "og-t",
+   "ru": "Против открытого гарда",
+   "orig": "Passing open guard",
+   "group": "passing",
+   "tag": "b"
+  },
+  {
+   "id": "hg-t",
+   "ru": "Полугард сверху",
+   "orig": "Half guard, top",
+   "group": "passing",
+   "tag": "b"
+  },
+  {
+   "id": "sc-t",
+   "ru": "Боковой контроль",
+   "orig": "Side control, top",
+   "group": "top",
+   "tag": "b"
+  },
+  {
+   "id": "mount-t",
+   "ru": "Маунт",
+   "orig": "Mount, top",
+   "group": "top",
+   "tag": "b"
+  },
+  {
+   "id": "kom-t",
+   "ru": "Колено на животе",
+   "orig": "Knee on belly",
+   "group": "top",
+   "tag": "b"
+  },
+  {
+   "id": "ns-t",
+   "ru": "Север-юг",
+   "orig": "North-south, top",
+   "group": "top",
+   "tag": "b"
+  },
+  {
+   "id": "kesa-t",
+   "ru": "Кеса-гатамэ",
+   "orig": "Kesa gatame / scarf hold",
+   "group": "top",
+   "tag": "b"
+  },
+  {
+   "id": "smount-t",
+   "ru": "S-маунт",
+   "orig": "S-mount",
+   "group": "top",
+   "tag": "b"
+  },
+  {
+   "id": "crucifix-t",
+   "ru": "Крест",
+   "orig": "Crucifix",
+   "group": "top",
+   "tag": "b"
+  },
+  {
+   "id": "sc-b",
+   "ru": "Под боковым контролем",
+   "orig": "Side control, bottom",
+   "group": "bottom",
+   "tag": "b"
+  },
+  {
+   "id": "mount-b",
+   "ru": "Под маунтом",
+   "orig": "Mount, bottom",
+   "group": "bottom",
+   "tag": "b"
+  },
+  {
+   "id": "kom-b",
+   "ru": "Под коленом на животе",
+   "orig": "Knee on belly, bottom",
+   "group": "bottom",
+   "tag": "b"
+  },
+  {
+   "id": "kesa-b",
+   "ru": "Под кеса-гатамэ",
+   "orig": "Kesa gatame, bottom",
+   "group": "bottom",
+   "tag": "b"
+  },
+  {
+   "id": "back-t",
+   "ru": "Контроль спины",
+   "orig": "Back control",
+   "group": "back",
+   "tag": "b"
+  },
+  {
+   "id": "back-b",
+   "ru": "Спину взяли",
+   "orig": "Back taken, defending",
+   "group": "back",
+   "tag": "b"
+  },
+  {
+   "id": "turtle-t",
+   "ru": "Против черепахи",
+   "orig": "Turtle, top",
+   "group": "back",
+   "tag": "b"
+  },
+  {
+   "id": "turtle-b",
+   "ru": "Черепаха",
+   "orig": "Turtle, bottom",
+   "group": "back",
+   "tag": "b"
+  },
+  {
+   "id": "fhl-t",
+   "ru": "Фронт-хедлок",
+   "orig": "Front headlock",
+   "group": "back",
+   "tag": "b"
+  },
+  {
+   "id": "ashi-b",
+   "ru": "Ашигарами",
+   "orig": "Ashi garami / leg entanglement",
+   "group": "legs",
+   "tag": "b"
+  },
+  {
+   "id": "slx-b",
+   "ru": "Сингл-лег X",
+   "orig": "Single leg X",
+   "group": "legs",
+   "tag": "b"
+  },
+  {
+   "id": "5050-b",
+   "ru": "50/50",
+   "orig": "50/50 guard",
+   "group": "legs",
+   "tag": "b"
+  },
+  {
+   "id": "saddle-b",
+   "ru": "Сэддл",
+   "orig": "Saddle / inside sankaku",
+   "group": "legs",
+   "tag": "n"
+  },
+  {
+   "id": "sub",
+   "ru": "Сдача соперника",
+   "orig": "Submission",
+   "group": "end",
+   "tag": "b"
+  }
+ ],
+ "techniques": [
+  {
+   "id": "stand-double-leg-takedown",
+   "from": "stand",
+   "to": "sc-t",
+   "type": "takedown",
+   "ru": "Проход в две ноги",
+   "orig": "Double leg takedown",
+   "tag": "b"
+  },
+  {
+   "id": "stand-single-leg-takedown",
+   "from": "stand",
+   "to": "og-t",
+   "type": "takedown",
+   "ru": "Проход в одну ногу",
+   "orig": "Single leg takedown",
+   "tag": "b"
+  },
+  {
+   "id": "stand-osoto-gari",
+   "from": "stand",
+   "to": "sc-t",
+   "type": "takedown",
+   "ru": "О-сото-гари",
+   "orig": "Osoto gari",
+   "tag": "b"
+  },
+  {
+   "id": "stand-seoi-nage",
+   "from": "stand",
+   "to": "sc-t",
+   "type": "takedown",
+   "ru": "Сэои-нагэ",
+   "orig": "Seoi nage",
+   "tag": "g"
+  },
+  {
+   "id": "stand-ouchi-gari",
+   "from": "stand",
+   "to": "cg-t",
+   "type": "takedown",
+   "ru": "О-ути-гари",
+   "orig": "Ouchi gari",
+   "tag": "b"
+  },
+  {
+   "id": "stand-snap-down",
+   "from": "stand",
+   "to": "turtle-t",
+   "type": "takedown",
+   "ru": "Снэпдаун",
+   "orig": "Snap down",
+   "tag": "b"
+  },
+  {
+   "id": "stand-guard-pull",
+   "from": "stand",
+   "to": "cg-b",
+   "type": "trans",
+   "ru": "Затягивание в гард",
+   "orig": "Guard pull",
+   "tag": "b"
+  },
+  {
+   "id": "stand-pull-to-de-la-riva",
+   "from": "stand",
+   "to": "dlr-b",
+   "type": "trans",
+   "ru": "Затягивание в де ла Риву",
+   "orig": "Pull to De La Riva",
+   "tag": "b"
+  },
+  {
+   "id": "stand-standing-guillotine",
+   "from": "stand",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Гильотина в стойке",
+   "orig": "Standing guillotine",
+   "tag": "b"
+  },
+  {
+   "id": "cg-b-scissor-sweep",
+   "from": "cg-b",
+   "to": "mount-t",
+   "type": "sweep",
+   "ru": "Свип ножницами",
+   "orig": "Scissor sweep",
+   "tag": "b"
+  },
+  {
+   "id": "cg-b-hip-bump-sweep",
+   "from": "cg-b",
+   "to": "mount-t",
+   "type": "sweep",
+   "ru": "Свип с бедра",
+   "orig": "Hip bump sweep",
+   "tag": "b"
+  },
+  {
+   "id": "cg-b-flower-sweep",
+   "from": "cg-b",
+   "to": "mount-t",
+   "type": "sweep",
+   "ru": "Свип «цветок»",
+   "orig": "Flower sweep",
+   "tag": "b"
+  },
+  {
+   "id": "cg-b-kimura-from-guard",
+   "from": "cg-b",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Кимура",
+   "orig": "Kimura from guard",
+   "tag": "b"
+  },
+  {
+   "id": "cg-b-triangle-choke",
+   "from": "cg-b",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Треугольник",
+   "orig": "Triangle choke",
+   "tag": "b"
+  },
+  {
+   "id": "cg-b-armbar-from-guard",
+   "from": "cg-b",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Рычаг локтя из гарда",
+   "orig": "Armbar from guard",
+   "tag": "b"
+  },
+  {
+   "id": "cg-b-cross-collar-choke",
+   "from": "cg-b",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Удушение крестом",
+   "orig": "Cross collar choke",
+   "tag": "g"
+  },
+  {
+   "id": "cg-b-omoplata",
+   "from": "cg-b",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Омоплата",
+   "orig": "Omoplata",
+   "tag": "b"
+  },
+  {
+   "id": "cg-b-guillotine-from-guard",
+   "from": "cg-b",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Гильотина из гарда",
+   "orig": "Guillotine from guard",
+   "tag": "b"
+  },
+  {
+   "id": "cg-b-arm-drag-to-back",
+   "from": "cg-b",
+   "to": "back-t",
+   "type": "trans",
+   "ru": "Арм-драг на спину",
+   "orig": "Arm drag to back",
+   "tag": "b"
+  },
+  {
+   "id": "cg-b-open-to-butterfly",
+   "from": "cg-b",
+   "to": "bfly-b",
+   "type": "trans",
+   "ru": "Раскрыть гард в баттерфляй",
+   "orig": "Open to butterfly",
+   "tag": "b"
+  },
+  {
+   "id": "cg-t-standing-guard-break",
+   "from": "cg-t",
+   "to": "og-t",
+   "type": "pass",
+   "ru": "Раскрытие гарда стоя",
+   "orig": "Standing guard break",
+   "tag": "b"
+  },
+  {
+   "id": "cg-t-knee-in-guard-break",
+   "from": "cg-t",
+   "to": "og-t",
+   "type": "pass",
+   "ru": "Раскрытие коленом в центр",
+   "orig": "Knee-in guard break",
+   "tag": "b"
+  },
+  {
+   "id": "cg-t-ezekiel-choke-in-guard",
+   "from": "cg-t",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Эзекиль в гарде",
+   "orig": "Ezekiel choke in guard",
+   "tag": "g"
+  },
+  {
+   "id": "og-t-toreando-pass",
+   "from": "og-t",
+   "to": "sc-t",
+   "type": "pass",
+   "ru": "Тореадор",
+   "orig": "Toreando pass",
+   "tag": "b"
+  },
+  {
+   "id": "og-t-knee-slice-pass",
+   "from": "og-t",
+   "to": "sc-t",
+   "type": "pass",
+   "ru": "Проход коленом",
+   "orig": "Knee slice pass",
+   "tag": "b"
+  },
+  {
+   "id": "og-t-leg-drag",
+   "from": "og-t",
+   "to": "sc-t",
+   "type": "pass",
+   "ru": "Лег-драг",
+   "orig": "Leg drag",
+   "tag": "b"
+  },
+  {
+   "id": "og-t-over-under-pass",
+   "from": "og-t",
+   "to": "sc-t",
+   "type": "pass",
+   "ru": "Проход с перекрытием",
+   "orig": "Over-under pass",
+   "tag": "b"
+  },
+  {
+   "id": "og-t-double-under-pass",
+   "from": "og-t",
+   "to": "sc-t",
+   "type": "pass",
+   "ru": "Проход под обе ноги",
+   "orig": "Double under pass",
+   "tag": "b"
+  },
+  {
+   "id": "og-t-x-pass",
+   "from": "og-t",
+   "to": "sc-t",
+   "type": "pass",
+   "ru": "X-проход",
+   "orig": "X-pass",
+   "tag": "b"
+  },
+  {
+   "id": "og-t-pass-to-half-guard",
+   "from": "og-t",
+   "to": "hg-t",
+   "type": "trans",
+   "ru": "Зайти в полугард",
+   "orig": "Pass to half guard",
+   "tag": "b"
+  },
+  {
+   "id": "og-t-straight-ankle-lock-from-top",
+   "from": "og-t",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Прямой ахиллес сверху",
+   "orig": "Straight ankle lock from top",
+   "tag": "b"
+  },
+  {
+   "id": "hg-b-old-school-sweep",
+   "from": "hg-b",
+   "to": "sc-t",
+   "type": "sweep",
+   "ru": "Олд-скул свип",
+   "orig": "Old school sweep",
+   "tag": "b"
+  },
+  {
+   "id": "hg-b-dogfight-sweep",
+   "from": "hg-b",
+   "to": "sc-t",
+   "type": "sweep",
+   "ru": "Свип с андерхуком",
+   "orig": "Dogfight sweep",
+   "tag": "b"
+  },
+  {
+   "id": "hg-b-electric-chair-sweep",
+   "from": "hg-b",
+   "to": "sc-t",
+   "type": "sweep",
+   "ru": "Электрический стул",
+   "orig": "Electric chair sweep",
+   "tag": "n"
+  },
+  {
+   "id": "hg-b-recover-closed-guard",
+   "from": "hg-b",
+   "to": "cg-b",
+   "type": "escape",
+   "ru": "Вернуть закрытый гард",
+   "orig": "Recover closed guard",
+   "tag": "b"
+  },
+  {
+   "id": "hg-b-kimura-from-half-guard",
+   "from": "hg-b",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Кимура из полугарда",
+   "orig": "Kimura from half guard",
+   "tag": "b"
+  },
+  {
+   "id": "hg-b-back-take-from-half-guard",
+   "from": "hg-b",
+   "to": "back-t",
+   "type": "trans",
+   "ru": "Взятие спины из полугарда",
+   "orig": "Back take from half guard",
+   "tag": "b"
+  },
+  {
+   "id": "hg-t-knee-cut-from-half",
+   "from": "hg-t",
+   "to": "sc-t",
+   "type": "pass",
+   "ru": "Проход коленом из полугарда",
+   "orig": "Knee cut from half",
+   "tag": "b"
+  },
+  {
+   "id": "hg-t-crossface-underhook-pass",
+   "from": "hg-t",
+   "to": "sc-t",
+   "type": "pass",
+   "ru": "Кроссфейс и андерхук",
+   "orig": "Crossface underhook pass",
+   "tag": "b"
+  },
+  {
+   "id": "hg-t-half-guard-to-mount",
+   "from": "hg-t",
+   "to": "mount-t",
+   "type": "pass",
+   "ru": "Выход в маунт из полугарда",
+   "orig": "Half guard to mount",
+   "tag": "b"
+  },
+  {
+   "id": "hg-t-d-arce-choke",
+   "from": "hg-t",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Удушение д’Арсе",
+   "orig": "D’Arce choke",
+   "tag": "b"
+  },
+  {
+   "id": "bfly-b-butterfly-sweep",
+   "from": "bfly-b",
+   "to": "mount-t",
+   "type": "sweep",
+   "ru": "Баттерфляй-свип",
+   "orig": "Butterfly sweep",
+   "tag": "b"
+  },
+  {
+   "id": "bfly-b-butterfly-to-x-guard",
+   "from": "bfly-b",
+   "to": "x-b",
+   "type": "trans",
+   "ru": "Переход в X-гард",
+   "orig": "Butterfly to X-guard",
+   "tag": "b"
+  },
+  {
+   "id": "bfly-b-butterfly-to-ashi-garami",
+   "from": "bfly-b",
+   "to": "ashi-b",
+   "type": "trans",
+   "ru": "Вход в ашигарами",
+   "orig": "Butterfly to ashi garami",
+   "tag": "n"
+  },
+  {
+   "id": "bfly-b-arm-in-guillotine",
+   "from": "bfly-b",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Гильотина с рукой",
+   "orig": "Arm-in guillotine",
+   "tag": "b"
+  },
+  {
+   "id": "dlr-b-tripod-sweep",
+   "from": "dlr-b",
+   "to": "sc-t",
+   "type": "sweep",
+   "ru": "Трипод-свип",
+   "orig": "Tripod sweep",
+   "tag": "b"
+  },
+  {
+   "id": "dlr-b-berimbolo",
+   "from": "dlr-b",
+   "to": "back-t",
+   "type": "trans",
+   "ru": "Беримболо",
+   "orig": "Berimbolo",
+   "tag": "b"
+  },
+  {
+   "id": "dlr-b-de-la-riva-to-x-guard",
+   "from": "dlr-b",
+   "to": "x-b",
+   "type": "trans",
+   "ru": "Из де ла Ривы в X-гард",
+   "orig": "De La Riva to X-guard",
+   "tag": "b"
+  },
+  {
+   "id": "spider-b-spider-guard-sweep",
+   "from": "spider-b",
+   "to": "sc-t",
+   "type": "sweep",
+   "ru": "Свип из паука",
+   "orig": "Spider guard sweep",
+   "tag": "g"
+  },
+  {
+   "id": "spider-b-triangle-from-spider",
+   "from": "spider-b",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Треугольник из паука",
+   "orig": "Triangle from spider",
+   "tag": "g"
+  },
+  {
+   "id": "spider-b-spider-to-lasso",
+   "from": "spider-b",
+   "to": "lasso-b",
+   "type": "trans",
+   "ru": "Переход в лассо",
+   "orig": "Spider to lasso",
+   "tag": "g"
+  },
+  {
+   "id": "lasso-b-lasso-sweep",
+   "from": "lasso-b",
+   "to": "sc-t",
+   "type": "sweep",
+   "ru": "Свип из лассо",
+   "orig": "Lasso sweep",
+   "tag": "g"
+  },
+  {
+   "id": "lasso-b-omoplata-from-lasso",
+   "from": "lasso-b",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Омоплата из лассо",
+   "orig": "Omoplata from lasso",
+   "tag": "g"
+  },
+  {
+   "id": "x-b-x-guard-technical-stand-up-sweep",
+   "from": "x-b",
+   "to": "sc-t",
+   "type": "sweep",
+   "ru": "Технический подъём из X",
+   "orig": "X-guard technical stand-up sweep",
+   "tag": "b"
+  },
+  {
+   "id": "x-b-x-guard-to-ashi-garami",
+   "from": "x-b",
+   "to": "ashi-b",
+   "type": "trans",
+   "ru": "Переход в ашигарами",
+   "orig": "X-guard to ashi garami",
+   "tag": "b"
+  },
+  {
+   "id": "x-b-straight-ankle-lock-from-x",
+   "from": "x-b",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Прямой ахиллес из X",
+   "orig": "Straight ankle lock from X",
+   "tag": "b"
+  },
+  {
+   "id": "ashi-b-straight-ankle-lock",
+   "from": "ashi-b",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Прямой ахиллес",
+   "orig": "Straight ankle lock",
+   "tag": "b"
+  },
+  {
+   "id": "ashi-b-inside-heel-hook",
+   "from": "ashi-b",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Внутренний хилхук",
+   "orig": "Inside heel hook",
+   "tag": "n"
+  },
+  {
+   "id": "ashi-b-outside-heel-hook",
+   "from": "ashi-b",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Внешний хилхук",
+   "orig": "Outside heel hook",
+   "tag": "n"
+  },
+  {
+   "id": "ashi-b-kneebar",
+   "from": "ashi-b",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Рычаг колена",
+   "orig": "Kneebar",
+   "tag": "n"
+  },
+  {
+   "id": "sc-t-side-control-to-mount",
+   "from": "sc-t",
+   "to": "mount-t",
+   "type": "trans",
+   "ru": "Переход в маунт",
+   "orig": "Side control to mount",
+   "tag": "b"
+  },
+  {
+   "id": "sc-t-side-control-to-knee-on-belly",
+   "from": "sc-t",
+   "to": "kom-t",
+   "type": "trans",
+   "ru": "Колено на живот",
+   "orig": "Side control to knee on belly",
+   "tag": "b"
+  },
+  {
+   "id": "sc-t-side-control-to-north-south",
+   "from": "sc-t",
+   "to": "ns-t",
+   "type": "trans",
+   "ru": "Переход в север-юг",
+   "orig": "Side control to north-south",
+   "tag": "b"
+  },
+  {
+   "id": "sc-t-americana-from-side-control",
+   "from": "sc-t",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Американа",
+   "orig": "Americana from side control",
+   "tag": "b"
+  },
+  {
+   "id": "sc-t-kimura-from-side-control",
+   "from": "sc-t",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Кимура сверху",
+   "orig": "Kimura from side control",
+   "tag": "b"
+  },
+  {
+   "id": "sc-t-arm-triangle-from-side-control",
+   "from": "sc-t",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Удушение рукой",
+   "orig": "Arm triangle from side control",
+   "tag": "b"
+  },
+  {
+   "id": "sc-t-baseball-bat-choke",
+   "from": "sc-t",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Бейсбольное удушение",
+   "orig": "Baseball bat choke",
+   "tag": "g"
+  },
+  {
+   "id": "sc-t-far-side-armbar",
+   "from": "sc-t",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Рычаг локтя через голову",
+   "orig": "Far-side armbar",
+   "tag": "b"
+  },
+  {
+   "id": "mount-t-armbar-from-mount",
+   "from": "mount-t",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Рычаг локтя из маунта",
+   "orig": "Armbar from mount",
+   "tag": "b"
+  },
+  {
+   "id": "mount-t-americana-from-mount",
+   "from": "mount-t",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Американа из маунта",
+   "orig": "Americana from mount",
+   "tag": "b"
+  },
+  {
+   "id": "mount-t-arm-triangle-from-mount",
+   "from": "mount-t",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Удушение рукой из маунта",
+   "orig": "Arm triangle from mount",
+   "tag": "b"
+  },
+  {
+   "id": "mount-t-cross-collar-choke-from-mount",
+   "from": "mount-t",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Удушение крестом из маунта",
+   "orig": "Cross collar choke from mount",
+   "tag": "g"
+  },
+  {
+   "id": "mount-t-ezekiel-choke-from-mount",
+   "from": "mount-t",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Эзекиль из маунта",
+   "orig": "Ezekiel choke from mount",
+   "tag": "g"
+  },
+  {
+   "id": "mount-t-mount-to-back-take",
+   "from": "mount-t",
+   "to": "back-t",
+   "type": "trans",
+   "ru": "Взять спину, когда переворачивается",
+   "orig": "Mount to back take",
+   "tag": "b"
+  },
+  {
+   "id": "kom-t-armbar-from-knee-on-belly",
+   "from": "kom-t",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Рычаг локтя с колена",
+   "orig": "Armbar from knee on belly",
+   "tag": "b"
+  },
+  {
+   "id": "kom-t-collar-choke-from-knee-on-belly",
+   "from": "kom-t",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Удушение воротом с колена",
+   "orig": "Collar choke from knee on belly",
+   "tag": "g"
+  },
+  {
+   "id": "kom-t-knee-on-belly-to-mount",
+   "from": "kom-t",
+   "to": "mount-t",
+   "type": "trans",
+   "ru": "С колена в маунт",
+   "orig": "Knee on belly to mount",
+   "tag": "b"
+  },
+  {
+   "id": "ns-t-north-south-choke",
+   "from": "ns-t",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Удушение север-юг",
+   "orig": "North-south choke",
+   "tag": "b"
+  },
+  {
+   "id": "ns-t-kimura-from-north-south",
+   "from": "ns-t",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Кимура с север-юга",
+   "orig": "Kimura from north-south",
+   "tag": "b"
+  },
+  {
+   "id": "back-t-rear-naked-choke",
+   "from": "back-t",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Удушение сзади",
+   "orig": "Rear naked choke",
+   "tag": "b"
+  },
+  {
+   "id": "back-t-bow-and-arrow-choke",
+   "from": "back-t",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Лук и стрела",
+   "orig": "Bow and arrow choke",
+   "tag": "g"
+  },
+  {
+   "id": "back-t-armbar-from-back",
+   "from": "back-t",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Рычаг локтя со спины",
+   "orig": "Armbar from back",
+   "tag": "b"
+  },
+  {
+   "id": "back-t-back-to-mount",
+   "from": "back-t",
+   "to": "mount-t",
+   "type": "trans",
+   "ru": "Со спины в маунт",
+   "orig": "Back to mount",
+   "tag": "b"
+  },
+  {
+   "id": "turtle-t-back-take-from-turtle",
+   "from": "turtle-t",
+   "to": "back-t",
+   "type": "trans",
+   "ru": "Взятие спины с черепахи",
+   "orig": "Back take from turtle",
+   "tag": "b"
+  },
+  {
+   "id": "turtle-t-turtle-breakdown-to-side-control",
+   "from": "turtle-t",
+   "to": "sc-t",
+   "type": "trans",
+   "ru": "Перевернуть в боковой",
+   "orig": "Turtle breakdown to side control",
+   "tag": "b"
+  },
+  {
+   "id": "turtle-t-clock-choke",
+   "from": "turtle-t",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Удушение «часы»",
+   "orig": "Clock choke",
+   "tag": "g"
+  },
+  {
+   "id": "turtle-t-anaconda-choke",
+   "from": "turtle-t",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Анаконда",
+   "orig": "Anaconda choke",
+   "tag": "b"
+  },
+  {
+   "id": "mount-b-upa-mount-escape",
+   "from": "mount-b",
+   "to": "cg-t",
+   "type": "escape",
+   "ru": "Мост и переворот (апа)",
+   "orig": "Upa mount escape",
+   "tag": "b"
+  },
+  {
+   "id": "mount-b-elbow-knee-mount-escape",
+   "from": "mount-b",
+   "to": "hg-b",
+   "type": "escape",
+   "ru": "Локоть-колено",
+   "orig": "Elbow-knee mount escape",
+   "tag": "b"
+  },
+  {
+   "id": "sc-b-side-control-escape-to-guard",
+   "from": "sc-b",
+   "to": "cg-b",
+   "type": "escape",
+   "ru": "Креветка в гард",
+   "orig": "Side control escape to guard",
+   "tag": "b"
+  },
+  {
+   "id": "sc-b-side-control-escape-to-knees",
+   "from": "sc-b",
+   "to": "turtle-b",
+   "type": "escape",
+   "ru": "Выход на колени",
+   "orig": "Side control escape to knees",
+   "tag": "b"
+  },
+  {
+   "id": "sc-b-side-control-underhook-escape",
+   "from": "sc-b",
+   "to": "stand",
+   "type": "escape",
+   "ru": "Андерхук и встать",
+   "orig": "Side control underhook escape",
+   "tag": "b"
+  },
+  {
+   "id": "back-b-back-escape",
+   "from": "back-b",
+   "to": "cg-t",
+   "type": "escape",
+   "ru": "Сбросить крюк, лечь на сторону",
+   "orig": "Back escape",
+   "tag": "b"
+  },
+  {
+   "id": "turtle-b-granby-roll-guard-recovery",
+   "from": "turtle-b",
+   "to": "bfly-b",
+   "type": "escape",
+   "ru": "Перекат Гранби",
+   "orig": "Granby roll guard recovery",
+   "tag": "b"
+  },
+  {
+   "id": "turtle-b-sit-out-from-turtle",
+   "from": "turtle-b",
+   "to": "stand",
+   "type": "escape",
+   "ru": "Сит-аут и встать",
+   "orig": "Sit out from turtle",
+   "tag": "b"
+  },
+  {
+   "id": "stand-clinch-entry",
+   "from": "stand",
+   "to": "clinch",
+   "type": "trans",
+   "ru": "Взять захваты, войти в клинч",
+   "orig": "Clinch entry",
+   "tag": "b"
+  },
+  {
+   "id": "stand-ankle-pick",
+   "from": "stand",
+   "to": "sc-t",
+   "type": "takedown",
+   "ru": "Захват лодыжки",
+   "orig": "Ankle pick",
+   "tag": "b"
+  },
+  {
+   "id": "stand-high-crotch-takedown",
+   "from": "stand",
+   "to": "sc-t",
+   "type": "takedown",
+   "ru": "Высокий проход в ногу",
+   "orig": "High crotch takedown",
+   "tag": "b"
+  },
+  {
+   "id": "stand-jump-guard",
+   "from": "stand",
+   "to": "cg-b",
+   "type": "trans",
+   "ru": "Прыжок в закрытый гард",
+   "orig": "Jump guard",
+   "tag": "b"
+  },
+  {
+   "id": "stand-sit-to-guard",
+   "from": "stand",
+   "to": "seated-b",
+   "type": "trans",
+   "ru": "Сесть в открытый гард",
+   "orig": "Sit to guard",
+   "tag": "b"
+  },
+  {
+   "id": "stand-imanari-roll",
+   "from": "stand",
+   "to": "ashi-b",
+   "type": "trans",
+   "ru": "Перекат Иманари",
+   "orig": "Imanari roll",
+   "tag": "n"
+  },
+  {
+   "id": "clinch-uchi-mata",
+   "from": "clinch",
+   "to": "sc-t",
+   "type": "takedown",
+   "ru": "Учи-мата",
+   "orig": "Uchi mata",
+   "tag": "b"
+  },
+  {
+   "id": "clinch-harai-goshi",
+   "from": "clinch",
+   "to": "sc-t",
+   "type": "takedown",
+   "ru": "Харай-гоши",
+   "orig": "Harai goshi",
+   "tag": "g"
+  },
+  {
+   "id": "clinch-tai-otoshi",
+   "from": "clinch",
+   "to": "sc-t",
+   "type": "takedown",
+   "ru": "Тай-отоши",
+   "orig": "Tai otoshi",
+   "tag": "g"
+  },
+  {
+   "id": "clinch-o-goshi",
+   "from": "clinch",
+   "to": "kesa-t",
+   "type": "takedown",
+   "ru": "Бросок через бедро (о-гоши)",
+   "orig": "O goshi",
+   "tag": "b"
+  },
+  {
+   "id": "clinch-kosoto-gari",
+   "from": "clinch",
+   "to": "sc-t",
+   "type": "takedown",
+   "ru": "Ко-сото-гари",
+   "orig": "Kosoto gari",
+   "tag": "b"
+  },
+  {
+   "id": "clinch-kouchi-gari",
+   "from": "clinch",
+   "to": "sc-t",
+   "type": "takedown",
+   "ru": "Ко-ути-гари",
+   "orig": "Kouchi gari",
+   "tag": "b"
+  },
+  {
+   "id": "clinch-body-lock-takedown",
+   "from": "clinch",
+   "to": "sc-t",
+   "type": "takedown",
+   "ru": "Бодилок и подсечка",
+   "orig": "Body lock takedown",
+   "tag": "b"
+  },
+  {
+   "id": "clinch-standing-arm-drag-to-back",
+   "from": "clinch",
+   "to": "back-t",
+   "type": "trans",
+   "ru": "Арм-драг за спину в стойке",
+   "orig": "Standing arm drag to back",
+   "tag": "b"
+  },
+  {
+   "id": "clinch-snap-down-to-front-headlock",
+   "from": "clinch",
+   "to": "fhl-t",
+   "type": "trans",
+   "ru": "Снэпдаун во фронт-хедлок",
+   "orig": "Snap down to front headlock",
+   "tag": "b"
+  },
+  {
+   "id": "clinch-guillotine-from-clinch",
+   "from": "clinch",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Гильотина в клинче",
+   "orig": "Guillotine from clinch",
+   "tag": "b"
+  },
+  {
+   "id": "fhl-t-guillotine-from-front-headlock",
+   "from": "fhl-t",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Гильотина из фронт-хедлока",
+   "orig": "Guillotine from front headlock",
+   "tag": "b"
+  },
+  {
+   "id": "fhl-t-d-arce-from-front-headlock",
+   "from": "fhl-t",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Д’Арсе из фронт-хедлока",
+   "orig": "D’Arce from front headlock",
+   "tag": "b"
+  },
+  {
+   "id": "fhl-t-anaconda-from-front-headlock",
+   "from": "fhl-t",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Анаконда из фронт-хедлока",
+   "orig": "Anaconda from front headlock",
+   "tag": "b"
+  },
+  {
+   "id": "fhl-t-peruvian-necktie",
+   "from": "fhl-t",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Перуанский галстук",
+   "orig": "Peruvian necktie",
+   "tag": "b"
+  },
+  {
+   "id": "fhl-t-go-behind-from-front-headlock",
+   "from": "fhl-t",
+   "to": "back-t",
+   "type": "trans",
+   "ru": "Обход за спину",
+   "orig": "Go behind from front headlock",
+   "tag": "b"
+  },
+  {
+   "id": "fhl-t-front-headlock-to-turtle",
+   "from": "fhl-t",
+   "to": "turtle-t",
+   "type": "trans",
+   "ru": "Прижать в черепаху",
+   "orig": "Front headlock to turtle",
+   "tag": "b"
+  },
+  {
+   "id": "cg-b-pendulum-sweep",
+   "from": "cg-b",
+   "to": "mount-t",
+   "type": "sweep",
+   "ru": "Маятник",
+   "orig": "Pendulum sweep",
+   "tag": "b"
+  },
+  {
+   "id": "cg-b-wristlock-from-guard",
+   "from": "cg-b",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Ключ на кисть из гарда",
+   "orig": "Wristlock from guard",
+   "tag": "b"
+  },
+  {
+   "id": "cg-b-rubber-guard-entry",
+   "from": "cg-b",
+   "to": "rubber-b",
+   "type": "trans",
+   "ru": "Переход в резиновый гард",
+   "orig": "Rubber guard entry",
+   "tag": "b"
+  },
+  {
+   "id": "cg-t-stack-pass",
+   "from": "cg-t",
+   "to": "sc-t",
+   "type": "pass",
+   "ru": "Стэк-проход",
+   "orig": "Stack pass",
+   "tag": "b"
+  },
+  {
+   "id": "rubber-b-gogoplata",
+   "from": "rubber-b",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Гогоплата",
+   "orig": "Gogoplata",
+   "tag": "b"
+  },
+  {
+   "id": "rubber-b-omoplata-from-rubber-guard",
+   "from": "rubber-b",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Омоплата из резинового гарда",
+   "orig": "Omoplata from rubber guard",
+   "tag": "b"
+  },
+  {
+   "id": "rubber-b-triangle-from-rubber-guard",
+   "from": "rubber-b",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Треугольник из резинового гарда",
+   "orig": "Triangle from rubber guard",
+   "tag": "b"
+  },
+  {
+   "id": "seated-b-ankle-pick-sweep",
+   "from": "seated-b",
+   "to": "sc-t",
+   "type": "sweep",
+   "ru": "Свип с захватом лодыжки",
+   "orig": "Ankle pick sweep",
+   "tag": "b"
+  },
+  {
+   "id": "seated-b-wrestle-up",
+   "from": "seated-b",
+   "to": "sc-t",
+   "type": "sweep",
+   "ru": "Подъём с борьбой",
+   "orig": "Wrestle up",
+   "tag": "b"
+  },
+  {
+   "id": "seated-b-seated-guard-to-single-leg-x",
+   "from": "seated-b",
+   "to": "slx-b",
+   "type": "trans",
+   "ru": "Вход в сингл-лег X",
+   "orig": "Seated guard to single leg X",
+   "tag": "b"
+  },
+  {
+   "id": "seated-b-seated-to-butterfly",
+   "from": "seated-b",
+   "to": "bfly-b",
+   "type": "trans",
+   "ru": "Поставить баттерфляй-крюки",
+   "orig": "Seated to butterfly",
+   "tag": "b"
+  },
+  {
+   "id": "seated-b-seated-to-de-la-riva",
+   "from": "seated-b",
+   "to": "dlr-b",
+   "type": "trans",
+   "ru": "Зацепить де ла Риву",
+   "orig": "Seated to De La Riva",
+   "tag": "b"
+  },
+  {
+   "id": "seated-b-enter-k-guard",
+   "from": "seated-b",
+   "to": "kg-b",
+   "type": "trans",
+   "ru": "Вход в K-гард",
+   "orig": "Enter K-guard",
+   "tag": "b"
+  },
+  {
+   "id": "seated-b-collar-sleeve-grips",
+   "from": "seated-b",
+   "to": "cs-b",
+   "type": "trans",
+   "ru": "Захват ворота и рукава",
+   "orig": "Collar sleeve grips",
+   "tag": "g"
+  },
+  {
+   "id": "seated-b-loop-choke",
+   "from": "seated-b",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Удушение «петля»",
+   "orig": "Loop choke",
+   "tag": "g"
+  },
+  {
+   "id": "cs-b-collar-sleeve-sweep",
+   "from": "cs-b",
+   "to": "sc-t",
+   "type": "sweep",
+   "ru": "Свип из коллар-слив",
+   "orig": "Collar sleeve sweep",
+   "tag": "g"
+  },
+  {
+   "id": "cs-b-triangle-from-collar-sleeve",
+   "from": "cs-b",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Треугольник из коллар-слив",
+   "orig": "Triangle from collar sleeve",
+   "tag": "g"
+  },
+  {
+   "id": "cs-b-omoplata-from-collar-sleeve",
+   "from": "cs-b",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Омоплата из коллар-слив",
+   "orig": "Omoplata from collar sleeve",
+   "tag": "g"
+  },
+  {
+   "id": "cs-b-collar-sleeve-to-spider",
+   "from": "cs-b",
+   "to": "spider-b",
+   "type": "trans",
+   "ru": "Переход в паука",
+   "orig": "Collar sleeve to spider",
+   "tag": "g"
+  },
+  {
+   "id": "hg-b-half-guard-to-knee-shield",
+   "from": "hg-b",
+   "to": "kshield-b",
+   "type": "trans",
+   "ru": "Поставить колено-щит",
+   "orig": "Half guard to knee shield",
+   "tag": "b"
+  },
+  {
+   "id": "hg-b-deep-half-guard-entry",
+   "from": "hg-b",
+   "to": "dh-b",
+   "type": "trans",
+   "ru": "Нырнуть в глубокий полугард",
+   "orig": "Deep half guard entry",
+   "tag": "b"
+  },
+  {
+   "id": "kshield-b-z-guard-sweep",
+   "from": "kshield-b",
+   "to": "sc-t",
+   "type": "sweep",
+   "ru": "Свип из Z-гарда",
+   "orig": "Z-guard sweep",
+   "tag": "b"
+  },
+  {
+   "id": "kshield-b-kimura-from-knee-shield",
+   "from": "kshield-b",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Кимура из Z-гарда",
+   "orig": "Kimura from knee shield",
+   "tag": "b"
+  },
+  {
+   "id": "kshield-b-back-take-from-knee-shield",
+   "from": "kshield-b",
+   "to": "back-t",
+   "type": "trans",
+   "ru": "Выход на спину из Z-гарда",
+   "orig": "Back take from knee shield",
+   "tag": "b"
+  },
+  {
+   "id": "kshield-b-knee-shield-to-deep-half",
+   "from": "kshield-b",
+   "to": "dh-b",
+   "type": "trans",
+   "ru": "Из Z-гарда в глубокий полугард",
+   "orig": "Knee shield to deep half",
+   "tag": "b"
+  },
+  {
+   "id": "kshield-b-knee-shield-to-single-leg-x",
+   "from": "kshield-b",
+   "to": "slx-b",
+   "type": "trans",
+   "ru": "Из Z-гарда в сингл-лег X",
+   "orig": "Knee shield to single leg X",
+   "tag": "b"
+  },
+  {
+   "id": "dh-b-waiter-sweep",
+   "from": "dh-b",
+   "to": "sc-t",
+   "type": "sweep",
+   "ru": "Свип «официант»",
+   "orig": "Waiter sweep",
+   "tag": "b"
+  },
+  {
+   "id": "dh-b-homer-simpson-sweep",
+   "from": "dh-b",
+   "to": "sc-t",
+   "type": "sweep",
+   "ru": "Свип «Гомер Симпсон»",
+   "orig": "Homer Simpson sweep",
+   "tag": "b"
+  },
+  {
+   "id": "dh-b-back-take-from-deep-half",
+   "from": "dh-b",
+   "to": "back-t",
+   "type": "trans",
+   "ru": "Выход на спину из глубокого полугарда",
+   "orig": "Back take from deep half",
+   "tag": "b"
+  },
+  {
+   "id": "dh-b-deep-half-to-single-leg-x",
+   "from": "dh-b",
+   "to": "slx-b",
+   "type": "trans",
+   "ru": "Из глубокого полугарда в сингл-лег X",
+   "orig": "Deep half to single leg X",
+   "tag": "b"
+  },
+  {
+   "id": "bfly-b-arm-drag-from-butterfly",
+   "from": "bfly-b",
+   "to": "back-t",
+   "type": "trans",
+   "ru": "Арм-драг из баттерфляя",
+   "orig": "Arm drag from butterfly",
+   "tag": "b"
+  },
+  {
+   "id": "bfly-b-butterfly-to-single-leg-x",
+   "from": "bfly-b",
+   "to": "slx-b",
+   "type": "trans",
+   "ru": "Из баттерфляя в сингл-лег X",
+   "orig": "Butterfly to single leg X",
+   "tag": "b"
+  },
+  {
+   "id": "bfly-b-sumi-gaeshi",
+   "from": "bfly-b",
+   "to": "sc-t",
+   "type": "sweep",
+   "ru": "Суми-гаэши",
+   "orig": "Sumi gaeshi",
+   "tag": "b"
+  },
+  {
+   "id": "dlr-b-de-la-riva-to-reverse-de-la-riva",
+   "from": "dlr-b",
+   "to": "rdlr-b",
+   "type": "trans",
+   "ru": "Переход в обратную де ла Риву",
+   "orig": "De La Riva to reverse De La Riva",
+   "tag": "b"
+  },
+  {
+   "id": "dlr-b-de-la-riva-sleeve-sweep",
+   "from": "dlr-b",
+   "to": "sc-t",
+   "type": "sweep",
+   "ru": "Свип ДЛР с захватом рукава",
+   "orig": "De La Riva sleeve sweep",
+   "tag": "g"
+  },
+  {
+   "id": "dlr-b-omoplata-from-de-la-riva",
+   "from": "dlr-b",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Омоплата из де ла Ривы",
+   "orig": "Omoplata from De La Riva",
+   "tag": "b"
+  },
+  {
+   "id": "dlr-b-worm-guard-entry",
+   "from": "dlr-b",
+   "to": "worm-b",
+   "type": "trans",
+   "ru": "Обмотать лацкан",
+   "orig": "Worm guard entry",
+   "tag": "g"
+  },
+  {
+   "id": "rdlr-b-reverse-de-la-riva-sweep",
+   "from": "rdlr-b",
+   "to": "sc-t",
+   "type": "sweep",
+   "ru": "Свип из обратной де ла Ривы",
+   "orig": "Reverse De La Riva sweep",
+   "tag": "b"
+  },
+  {
+   "id": "rdlr-b-kiss-of-the-dragon",
+   "from": "rdlr-b",
+   "to": "back-t",
+   "type": "trans",
+   "ru": "Поцелуй дракона",
+   "orig": "Kiss of the dragon",
+   "tag": "b"
+  },
+  {
+   "id": "rdlr-b-berimbolo-from-reverse-de-la-riva",
+   "from": "rdlr-b",
+   "to": "back-t",
+   "type": "trans",
+   "ru": "Беримболо из обратной ДЛР",
+   "orig": "Berimbolo from reverse De La Riva",
+   "tag": "b"
+  },
+  {
+   "id": "rdlr-b-reverse-de-la-riva-to-50-50",
+   "from": "rdlr-b",
+   "to": "5050-b",
+   "type": "trans",
+   "ru": "Из обратной ДЛР в 50/50",
+   "orig": "Reverse De La Riva to 50/50",
+   "tag": "b"
+  },
+  {
+   "id": "rdlr-b-reverse-de-la-riva-to-k-guard",
+   "from": "rdlr-b",
+   "to": "kg-b",
+   "type": "trans",
+   "ru": "Из обратной ДЛР в K-гард",
+   "orig": "Reverse De La Riva to K-guard",
+   "tag": "b"
+  },
+  {
+   "id": "kg-b-k-guard-to-ashi-garami",
+   "from": "kg-b",
+   "to": "ashi-b",
+   "type": "trans",
+   "ru": "Из K-гарда в ашигарами",
+   "orig": "K-guard to ashi garami",
+   "tag": "b"
+  },
+  {
+   "id": "kg-b-berimbolo-from-k-guard",
+   "from": "kg-b",
+   "to": "back-t",
+   "type": "trans",
+   "ru": "Беримболо из K-гарда",
+   "orig": "Berimbolo from K-guard",
+   "tag": "b"
+  },
+  {
+   "id": "kg-b-k-guard-to-saddle",
+   "from": "kg-b",
+   "to": "saddle-b",
+   "type": "trans",
+   "ru": "Из K-гарда в сэддл",
+   "orig": "K-guard to saddle",
+   "tag": "n"
+  },
+  {
+   "id": "worm-b-worm-guard-sweep",
+   "from": "worm-b",
+   "to": "sc-t",
+   "type": "sweep",
+   "ru": "Ворм-свип",
+   "orig": "Worm guard sweep",
+   "tag": "g"
+  },
+  {
+   "id": "worm-b-worm-guard-back-take",
+   "from": "worm-b",
+   "to": "back-t",
+   "type": "trans",
+   "ru": "Выход на спину из ворма",
+   "orig": "Worm guard back take",
+   "tag": "g"
+  },
+  {
+   "id": "spider-b-omoplata-from-spider",
+   "from": "spider-b",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Омоплата из паука",
+   "orig": "Omoplata from spider",
+   "tag": "g"
+  },
+  {
+   "id": "lasso-b-triangle-from-lasso",
+   "from": "lasso-b",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Треугольник из лассо",
+   "orig": "Triangle from lasso",
+   "tag": "g"
+  },
+  {
+   "id": "x-b-x-guard-to-single-leg-x",
+   "from": "x-b",
+   "to": "slx-b",
+   "type": "trans",
+   "ru": "Из X-гарда в сингл-лег X",
+   "orig": "X-guard to single leg X",
+   "tag": "b"
+  },
+  {
+   "id": "slx-b-single-leg-x-sweep",
+   "from": "slx-b",
+   "to": "sc-t",
+   "type": "sweep",
+   "ru": "Свип из сингл-лег X",
+   "orig": "Single leg X sweep",
+   "tag": "b"
+  },
+  {
+   "id": "slx-b-straight-ankle-lock-from-single-leg-x",
+   "from": "slx-b",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Прямой ахиллес из сингл-лег X",
+   "orig": "Straight ankle lock from single leg X",
+   "tag": "b"
+  },
+  {
+   "id": "slx-b-outside-heel-hook-from-single-leg-x",
+   "from": "slx-b",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Внешний хилхук из сингл-лег X",
+   "orig": "Outside heel hook from single leg X",
+   "tag": "n"
+  },
+  {
+   "id": "slx-b-toe-hold",
+   "from": "slx-b",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Тоу-холд",
+   "orig": "Toe hold",
+   "tag": "b"
+  },
+  {
+   "id": "slx-b-single-leg-x-to-x-guard",
+   "from": "slx-b",
+   "to": "x-b",
+   "type": "trans",
+   "ru": "Из сингл-лег X в X-гард",
+   "orig": "Single leg X to X-guard",
+   "tag": "b"
+  },
+  {
+   "id": "slx-b-single-leg-x-to-50-50",
+   "from": "slx-b",
+   "to": "5050-b",
+   "type": "trans",
+   "ru": "Из сингл-лег X в 50/50",
+   "orig": "Single leg X to 50/50",
+   "tag": "b"
+  },
+  {
+   "id": "slx-b-single-leg-x-to-saddle",
+   "from": "slx-b",
+   "to": "saddle-b",
+   "type": "trans",
+   "ru": "Из сингл-лег X в сэддл",
+   "orig": "Single leg X to saddle",
+   "tag": "n"
+  },
+  {
+   "id": "5050-b-inside-heel-hook-from-50-50",
+   "from": "5050-b",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Внутренний хилхук из 50/50",
+   "orig": "Inside heel hook from 50/50",
+   "tag": "n"
+  },
+  {
+   "id": "5050-b-straight-ankle-lock-from-50-50",
+   "from": "5050-b",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Прямой ахиллес из 50/50",
+   "orig": "Straight ankle lock from 50/50",
+   "tag": "b"
+  },
+  {
+   "id": "5050-b-toe-hold-from-50-50",
+   "from": "5050-b",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Тоу-холд из 50/50",
+   "orig": "Toe hold from 50/50",
+   "tag": "b"
+  },
+  {
+   "id": "5050-b-50-50-sweep",
+   "from": "5050-b",
+   "to": "sc-t",
+   "type": "sweep",
+   "ru": "Свип из 50/50",
+   "orig": "50/50 sweep",
+   "tag": "b"
+  },
+  {
+   "id": "5050-b-berimbolo-from-50-50",
+   "from": "5050-b",
+   "to": "back-t",
+   "type": "trans",
+   "ru": "Беримболо из 50/50",
+   "orig": "Berimbolo from 50/50",
+   "tag": "b"
+  },
+  {
+   "id": "ashi-b-ashi-garami-to-saddle",
+   "from": "ashi-b",
+   "to": "saddle-b",
+   "type": "trans",
+   "ru": "Из ашигарами в сэддл",
+   "orig": "Ashi garami to saddle",
+   "tag": "n"
+  },
+  {
+   "id": "ashi-b-ashi-garami-sweep",
+   "from": "ashi-b",
+   "to": "sc-t",
+   "type": "sweep",
+   "ru": "Подъём из ашигарами",
+   "orig": "Ashi garami sweep",
+   "tag": "b"
+  },
+  {
+   "id": "ashi-b-estima-lock",
+   "from": "ashi-b",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Эстима-лок",
+   "orig": "Estima lock",
+   "tag": "b"
+  },
+  {
+   "id": "saddle-b-inside-heel-hook-from-saddle",
+   "from": "saddle-b",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Внутренний хилхук из сэддла",
+   "orig": "Inside heel hook from saddle",
+   "tag": "n"
+  },
+  {
+   "id": "saddle-b-kneebar-from-saddle",
+   "from": "saddle-b",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Рычаг колена из сэддла",
+   "orig": "Kneebar from saddle",
+   "tag": "n"
+  },
+  {
+   "id": "saddle-b-calf-slicer",
+   "from": "saddle-b",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Ключ на икру",
+   "orig": "Calf slicer",
+   "tag": "n"
+  },
+  {
+   "id": "saddle-b-toe-hold-from-saddle",
+   "from": "saddle-b",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Тоу-холд из сэддла",
+   "orig": "Toe hold from saddle",
+   "tag": "n"
+  },
+  {
+   "id": "saddle-b-saddle-to-back-take",
+   "from": "saddle-b",
+   "to": "back-t",
+   "type": "trans",
+   "ru": "Из сэддла на спину",
+   "orig": "Saddle to back take",
+   "tag": "n"
+  },
+  {
+   "id": "og-t-long-step-pass",
+   "from": "og-t",
+   "to": "sc-t",
+   "type": "pass",
+   "ru": "Лонгстэп",
+   "orig": "Long step pass",
+   "tag": "b"
+  },
+  {
+   "id": "og-t-body-lock-pass",
+   "from": "og-t",
+   "to": "sc-t",
+   "type": "pass",
+   "ru": "Проход с бодилоком",
+   "orig": "Body lock pass",
+   "tag": "b"
+  },
+  {
+   "id": "og-t-leg-weave-pass",
+   "from": "og-t",
+   "to": "sc-t",
+   "type": "pass",
+   "ru": "Плетение ног",
+   "orig": "Leg weave pass",
+   "tag": "b"
+  },
+  {
+   "id": "og-t-float-pass",
+   "from": "og-t",
+   "to": "sc-t",
+   "type": "pass",
+   "ru": "Флоат-проход",
+   "orig": "Float pass",
+   "tag": "b"
+  },
+  {
+   "id": "og-t-toreando-to-knee-on-belly",
+   "from": "og-t",
+   "to": "kom-t",
+   "type": "pass",
+   "ru": "Тореадор в колено на живот",
+   "orig": "Toreando to knee on belly",
+   "tag": "b"
+  },
+  {
+   "id": "og-t-toe-hold-from-top",
+   "from": "og-t",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Тоу-холд сверху",
+   "orig": "Toe hold from top",
+   "tag": "b"
+  },
+  {
+   "id": "og-t-kneebar-from-top",
+   "from": "og-t",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Рычаг колена сверху",
+   "orig": "Kneebar from top",
+   "tag": "n"
+  },
+  {
+   "id": "hg-t-sit-out-pass",
+   "from": "hg-t",
+   "to": "sc-t",
+   "type": "pass",
+   "ru": "Сит-аут проход",
+   "orig": "Sit out pass",
+   "tag": "b"
+  },
+  {
+   "id": "hg-t-kimura-from-half-guard-top",
+   "from": "hg-t",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Кимура из полугарда сверху",
+   "orig": "Kimura from half guard top",
+   "tag": "b"
+  },
+  {
+   "id": "hg-t-arm-triangle-from-half-guard",
+   "from": "hg-t",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Удушение рукой из полугарда",
+   "orig": "Arm triangle from half guard",
+   "tag": "b"
+  },
+  {
+   "id": "sc-t-side-control-to-kesa-gatame",
+   "from": "sc-t",
+   "to": "kesa-t",
+   "type": "trans",
+   "ru": "Переход в кеса-гатамэ",
+   "orig": "Side control to kesa gatame",
+   "tag": "b"
+  },
+  {
+   "id": "sc-t-side-control-to-crucifix",
+   "from": "sc-t",
+   "to": "crucifix-t",
+   "type": "trans",
+   "ru": "Переход в крест",
+   "orig": "Side control to crucifix",
+   "tag": "b"
+  },
+  {
+   "id": "sc-t-paper-cutter-choke",
+   "from": "sc-t",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Удушение «нож для бумаги»",
+   "orig": "Paper cutter choke",
+   "tag": "g"
+  },
+  {
+   "id": "sc-t-straight-armlock-from-side-control",
+   "from": "sc-t",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Прямой рычаг руки",
+   "orig": "Straight armlock from side control",
+   "tag": "b"
+  },
+  {
+   "id": "ns-t-north-south-to-side-control",
+   "from": "ns-t",
+   "to": "sc-t",
+   "type": "trans",
+   "ru": "Вернуться в боковой",
+   "orig": "North-south to side control",
+   "tag": "b"
+  },
+  {
+   "id": "mount-t-mount-to-s-mount",
+   "from": "mount-t",
+   "to": "smount-t",
+   "type": "trans",
+   "ru": "Переход в S-маунт",
+   "orig": "Mount to S-mount",
+   "tag": "b"
+  },
+  {
+   "id": "mount-t-mounted-triangle",
+   "from": "mount-t",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Треугольник из маунта",
+   "orig": "Mounted triangle",
+   "tag": "b"
+  },
+  {
+   "id": "smount-t-armbar-from-s-mount",
+   "from": "smount-t",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Рычаг локтя из S-маунта",
+   "orig": "Armbar from S-mount",
+   "tag": "b"
+  },
+  {
+   "id": "smount-t-collar-choke-from-s-mount",
+   "from": "smount-t",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Удушение воротом из S-маунта",
+   "orig": "Collar choke from S-mount",
+   "tag": "g"
+  },
+  {
+   "id": "smount-t-s-mount-to-mount",
+   "from": "smount-t",
+   "to": "mount-t",
+   "type": "trans",
+   "ru": "Вернуться в маунт",
+   "orig": "S-mount to mount",
+   "tag": "b"
+  },
+  {
+   "id": "kesa-t-armbar-from-kesa-gatame",
+   "from": "kesa-t",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Рычаг локтя через бедро",
+   "orig": "Armbar from kesa gatame",
+   "tag": "b"
+  },
+  {
+   "id": "kesa-t-kimura-from-kesa-gatame",
+   "from": "kesa-t",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Кимура из кеса-гатамэ",
+   "orig": "Kimura from kesa gatame",
+   "tag": "b"
+  },
+  {
+   "id": "kesa-t-kesa-gatame-to-mount",
+   "from": "kesa-t",
+   "to": "mount-t",
+   "type": "trans",
+   "ru": "Из кеса-гатамэ в маунт",
+   "orig": "Kesa gatame to mount",
+   "tag": "b"
+  },
+  {
+   "id": "crucifix-t-collar-choke-from-crucifix",
+   "from": "crucifix-t",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Удушение воротом из креста",
+   "orig": "Collar choke from crucifix",
+   "tag": "g"
+  },
+  {
+   "id": "crucifix-t-armbar-from-crucifix",
+   "from": "crucifix-t",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Рычаг локтя из креста",
+   "orig": "Armbar from crucifix",
+   "tag": "b"
+  },
+  {
+   "id": "crucifix-t-rear-naked-choke-from-crucifix",
+   "from": "crucifix-t",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Удушение сзади из креста",
+   "orig": "Rear naked choke from crucifix",
+   "tag": "b"
+  },
+  {
+   "id": "turtle-t-turtle-to-crucifix",
+   "from": "turtle-t",
+   "to": "crucifix-t",
+   "type": "trans",
+   "ru": "С черепахи в крест",
+   "orig": "Turtle to crucifix",
+   "tag": "b"
+  },
+  {
+   "id": "turtle-t-turtle-to-front-headlock",
+   "from": "turtle-t",
+   "to": "fhl-t",
+   "type": "trans",
+   "ru": "С черепахи во фронт-хедлок",
+   "orig": "Turtle to front headlock",
+   "tag": "b"
+  },
+  {
+   "id": "back-t-collar-choke-from-back",
+   "from": "back-t",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Удушение воротом со спины",
+   "orig": "Collar choke from back",
+   "tag": "g"
+  },
+  {
+   "id": "back-t-back-triangle",
+   "from": "back-t",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Треугольник ногами со спины",
+   "orig": "Back triangle",
+   "tag": "b"
+  },
+  {
+   "id": "back-t-short-choke",
+   "from": "back-t",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Короткое удушение",
+   "orig": "Short choke",
+   "tag": "b"
+  },
+  {
+   "id": "mount-b-mount-escape-to-deep-half",
+   "from": "mount-b",
+   "to": "dh-b",
+   "type": "escape",
+   "ru": "Выход в глубокий полугард",
+   "orig": "Mount escape to deep half",
+   "tag": "b"
+  },
+  {
+   "id": "sc-b-side-control-escape-to-half-guard",
+   "from": "sc-b",
+   "to": "hg-b",
+   "type": "escape",
+   "ru": "Креветка в полугард",
+   "orig": "Side control escape to half guard",
+   "tag": "b"
+  },
+  {
+   "id": "sc-b-kimura-from-bottom-side-control",
+   "from": "sc-b",
+   "to": "sub",
+   "type": "sub",
+   "ru": "Кимура снизу",
+   "orig": "Kimura from bottom side control",
+   "tag": "b"
+  },
+  {
+   "id": "kom-b-knee-on-belly-escape",
+   "from": "kom-b",
+   "to": "hg-b",
+   "type": "escape",
+   "ru": "Креветка из-под колена",
+   "orig": "Knee on belly escape",
+   "tag": "b"
+  },
+  {
+   "id": "kom-b-knee-on-belly-escape-to-feet",
+   "from": "kom-b",
+   "to": "stand",
+   "type": "escape",
+   "ru": "Толкнуть колено и встать",
+   "orig": "Knee on belly escape to feet",
+   "tag": "b"
+  },
+  {
+   "id": "kesa-b-kesa-gatame-escape-to-guard",
+   "from": "kesa-b",
+   "to": "cg-b",
+   "type": "escape",
+   "ru": "Выход из кеса-гатамэ в гард",
+   "orig": "Kesa gatame escape to guard",
+   "tag": "b"
+  },
+  {
+   "id": "kesa-b-kesa-gatame-escape-to-back",
+   "from": "kesa-b",
+   "to": "back-t",
+   "type": "escape",
+   "ru": "Выход за спину из кеса-гатамэ",
+   "orig": "Kesa gatame escape to back",
+   "tag": "b"
+  },
+  {
+   "id": "kesa-b-kesa-gatame-bridge-escape",
+   "from": "kesa-b",
+   "to": "sc-t",
+   "type": "escape",
+   "ru": "Мост и переворот из кеса-гатамэ",
+   "orig": "Kesa gatame bridge escape",
+   "tag": "b"
+  },
+  {
+   "id": "back-b-back-escape-to-half-guard-top",
+   "from": "back-b",
+   "to": "hg-t",
+   "type": "escape",
+   "ru": "Выход со спины в полугард сверху",
+   "orig": "Back escape to half guard top",
+   "tag": "b"
+  },
+  {
+   "id": "turtle-b-peek-out-from-turtle",
+   "from": "turtle-b",
+   "to": "sc-t",
+   "type": "escape",
+   "ru": "Выглянуть и переворот",
+   "orig": "Peek out from turtle",
+   "tag": "b"
+  }
+ ]
+}
