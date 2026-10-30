@@ -1,0 +1,9 @@
+{
+  "name": "bjj-map",
+  "private": true,
+  "scripts": {
+    "setup": "npm --prefix web install",
+    "dev": "npm --prefix web run dev",
+    "build": "npm --prefix web run build"
+  }
+}
